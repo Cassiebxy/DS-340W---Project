@@ -99,6 +99,9 @@ pred_dt <- as.data.table(log_predicted_test)
 pred_dt[, date := dates_test]
 pred_dt <- melt(pred_dt, id.vars = "date", variable.name = "region", value.name = "pred_log")
 
+# Merge predicted and actual data
+merged_dt <- merge(actual_dt, pred_dt, by = c("date", "region"))
+
 merged_dt %>%
   filter(region %in% top_regions) %>%
   ggplot(aes(x = date)) +
