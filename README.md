@@ -14,7 +14,6 @@ The work builds upon concepts presented in the paper **"AI in Actuarial Science 
 
 ## Repository Structure(File Description)
 ```
-.
 ├── Final Implement.R: Full implementation of this project's PCA–SDE mortality model
 ├── local_mortality.csv: Project dataset, Monthly regional death data (2015–2022) from 24 global subregions
 ├── AI_in_Actuarial_Science-master.zip: Source code from the parent paper (Richman 2021)
